@@ -9,6 +9,18 @@ D_TEXT_UNIT_DRAGON_TROOPER_LIEUTENANT,Dragon Trooper Heavy Gunner
 D_TEXT_UNIT_DRAGON_TROOPER_PLATOON,Dragon Trooper Brood
 D_TEXT_UNIT_DRAGON_TROOPER_REPEATER,Dragon Trooper Light Gunner
 D_TEXT_UNIT_DRAGON_TROOPER_SQUAD,Dragon Trooper Pack
+TEXT_ARMORED_SHIELDED_INTERCEPTOR_ELITE_SQUADRON,Elite Heavy TIE Interceptor Squadron
+TEXT_ARMORED_SHIELDED_INTERCEPTOR_ELITE_SQUADRON_HALF,Elite Heavy TIE Interceptor Squadron 1/2
+TEXT_ARMORED_SHIELDED_INTERCEPTOR_ELITE_SQUADRON2,Elite Heavy TIE Interceptor Squadron x2
+TEXT_ARMORED_SHIELDED_INTERCEPTOR_ION_SQUADRON,Ion Refit Heavy TIE Interceptor Squadron
+TEXT_ARMORED_SHIELDED_INTERCEPTOR_ION_SQUADRON_HALF,Ion Refit Heavy TIE Interceptor Squadron 1/2
+TEXT_ARMORED_SHIELDED_INTERCEPTOR_ION_SQUADRON2,Ion Refit Heavy TIE Interceptor Squadron x2
+TEXT_ARMORED_SHIELDED_INTERCEPTOR_MISSILE_SQUADRON,Missile Heavy TIE Interceptor Squadron
+TEXT_ARMORED_SHIELDED_INTERCEPTOR_MISSILE_SQUADRON_HALF,Missile Heavy TIE Interceptor Squadron 1/2
+TEXT_ARMORED_SHIELDED_INTERCEPTOR_MISSILE_SQUADRON2,Missile Heavy TIE Interceptor Squadron x2
+TEXT_ARMORED_SHIELDED_INTERCEPTOR_UPGUNNED_SQUADRON,Upgunned Heavy TIE Interceptor Squadron
+TEXT_ARMORED_SHIELDED_INTERCEPTOR_UPGUNNED_SQUADRON_HALF,Upgunned Heavy TIE Interceptor Squadron 1/2
+TEXT_ARMORED_SHIELDED_INTERCEPTOR_UPGUNNED_SQUADRON2,Upgunned Heavy TIE Interceptor Squadron x2
 TEXT_ATXT_SQUAD,AT-XT Walker Company
 TEXT_COMPANY_TIERFON_CAPITAL,Tierfon Sector Fleet HQ
 TEXT_COMPANY_TIERFON_DESCRIPTION,The main base of the Tierfon Sector Fleet, with extensive command centers and dockyard facilities.
@@ -46,6 +58,24 @@ TEXT_RESEARCH_SELLASAS_SWAP1_DESCRIPTION,Switch the loadouts of newly commission
 TEXT_RESEARCH_SELLASAS_SWAP1_NAME,Switch to Support Loadouts
 TEXT_RESEARCH_SELLASAS_SWAP2_DESCRIPTION,Switch the loadouts of newly commissioned Dreadnaught, Carrack and Neutron Star Cruisers to more modern, firepower-centric configurations. 
 TEXT_RESEARCH_SELLASAS_SWAP2_NAME,Switch to Combat Loadouts
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_ELITE_SQUADRON,Squadron: 12x Elite Heavy TIE Interceptor
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_ELITE_SQUADRON_DOUBLE,Squadron: 24x Elite Heavy TIE Interceptor
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_ELITE_SQUADRON_HALF,Squadron: 6x Elite Heavy TIE Interceptor
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_ELITE_WEAP1,1x Heavy Fighter Laser Cannon: 6 / 3.0s / 1.0km
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_ELITE_WEAP2,1x Fighter Proton Torpedo: 1 / 75.0s / 1.8km
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_ION_SQUADRON,Squadron: 12x Ion Refit Heavy TIE Interceptor
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_ION_SQUADRON_DOUBLE,Squadron: 24x Ion Refit Heavy TIE Interceptor
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_ION_SQUADRON_HALF,Squadron: 6x Ion Refit Heavy TIE Interceptor
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_ION_WEAP2,1x Fighter Ion Cannon: 4 / 3.0s / 1.0km
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_MISSILE_SQUADRON,Squadron: 12x Missile Heavy TIE Interceptor
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_MISSILE_SQUADRON_DOUBLE,Squadron: 24x Missile Heavy TIE Interceptor
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_MISSILE_SQUADRON_HALF,Squadron: 6x Missile Heavy TIE Interceptor
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_MISSILE_WEAP2,1x Fighter Assault Concussion Missile: 1 / 50.0s / 1.8km
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_MISSILE_WEAP3,1x Fighter Flechette Missile (AF): 1 / 50.0s / 1.8km
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_UPGUNNED_SQUADRON,Squadron: 12x Upgunned Heavy TIE Interceptor
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_UPGUNNED_SQUADRON_DOUBLE,Squadron: 24x Upgunned Heavy TIE Interceptor
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_UPGUNNED_SQUADRON_HALF,Squadron: 6x Upgunned Heavy TIE Interceptor
+TEXT_STATBLOCK_AS_TIE_INTERCEPTOR_UPGUNNED_WEAP2,1x Fighter Laser Cannon: 4 / 2.0s / 1.0km
 TEXT_STATBLOCK_ETA2_BASE,Health: 10 | Unshielded
 TEXT_STATBLOCK_ETA2_JEDI_BASE,Health: 360 [2%/5s] | Unshielded
 TEXT_STATBLOCK_ETA2_MOVE,Speed: 9.8 | Maneuverability: 4.8
@@ -91,6 +121,7 @@ TEXT_STATBLOCK_TIE_FIGHTER_BF2_SQUADRON_HALF,6x TIE Fighter Carrier Duty Refit
 TEXT_STATBLOCK_TIE_FIGHTER_BF2_SQUADRON_THIRD,4x TIE Fighter Carrier Duty Refit
 TEXT_STATBLOCK_TIE_FIGHTER_BF2_WEAP2,1x Fighter Proton Torpedo: 1 / 50.0s / 1.8km
 TEXT_STATBLOCK_TIE_FIGHTER_MISSILE_WEAP2,1x Fighter Concussion Missile: 1 / 75.0s / 1.8km
+TEXT_STATBLOCK_TIE_INTERCEPTOR_AS_MOVE,Speed: 7.5 | Maneuverability: 4.5
 TEXT_STATBLOCK_TIE_INTERCEPTOR_ION_SQUADRON,Squadron: 12x Ion Refit TIE Interceptor
 TEXT_STATBLOCK_TIE_INTERCEPTOR_ION_SQUADRON_DOUBLE,Squadron: 24x Ion Refit TIE Interceptor
 TEXT_STATBLOCK_TIE_INTERCEPTOR_ION_SQUADRON_HALF,Squadron: 6x Ion Refit TIE Interceptor
@@ -124,6 +155,10 @@ TEXT_TOOLTIP_ACCLAMATOR_DESTROYER_WEAP3,8x Assault Concussion Missiles: 8 / 20.0
 TEXT_TOOLTIP_ACCLAMATOR_DESTROYER_WEAP4,2x Proton Torpedoes: 2 / 7.5s / 5.3km
 TEXT_TOOLTIP_ACCLAMATOR_I_SUPPORT,The end of the Clone Wars saw an explosion in demand for cargo ships and freighters, alongside a post-war surplus of previously mass-produced Acclamators that were no longer needed in peacetime. Thus the remaining military Acclamators were widely converted into cargo ships to meet this new demand, repurposing the vehicle bay into a large cargo bay.
 TEXT_TOOLTIP_ACCLAMATOR_I_SUPPORT_HULL,Hull: 1925 (Frigate)
+TEXT_TOOLTIP_AS_INTERCEPTOR_ELITE,A very rare and expensive modification of the already obscure Shielded Armored TIE Interceptor variant, utilizing its more robust frame to install some torpedo launchers and upgraded laser cannons with power systems to match. The increased power supply and propulsion systems allow the craft to compensate for its increased mass from all the added systems. The result is a heavy fighter with enormous firepower that retains a stunning nimbleness, at the cost of being expensive and requiring a lot of maintenance.
+TEXT_TOOLTIP_AS_INTERCEPTOR_ION,A very rare and expensive modification of the already obscure Shielded Armored TIE Interceptor variant, utilizing its more robust frame to replace the chin-mounted secondary laser cannons with ion cannons, with upgraded power and propulsion systems to regain some of the base model's agility despite the additional mass. The result is a capable fighter, able to engage a wide variety of targets, but expensive and difficult to maintain.
+TEXT_TOOLTIP_AS_INTERCEPTOR_MISSILE,A very rare and expensive modification of the already obscure Shielded Armored TIE Interceptor variant, utilizing its more robust frame to install internal launchers for small anti-fighter missiles and launchers for anti-ship munitions on the wings. In addition, an overhaul of the power and propulsion systems claws back some of the stock model's performance lost to the increased mass. The result is an expensive and maintenance-heavy fighter that is exceptionally versatile and deadly while remaining nimble despite the heavier load and shield generator.
+TEXT_TOOLTIP_AS_INTERCEPTOR_UPGUNNED,A very rare and expensive modification of the already obscure Shielded Armored TIE Interceptor variant, utilizing its more robust frame to install the necessary power systems to operate the chin-mounted secondary laser cannons at increased power. Upgraded propulsion systems offset the additional weight of the new systems, bringing flight performance closer to the slimmer stock Interceptor models. The result is a versatile interceptor with enormous firepower and surprising agility, at the cost of being expensive to upgrade and maintain.
 TEXT_TOOLTIP_ATAT_IC,The Ion refit Imperial AT-AT was an uncommon variation that replaced it's super heavy laser cannons with heavy ion cannons. Although ion cannons were rarely found aboard ground vehicles, some minor warlords converted a small number of its All Terrain Armored Transport fleet into mobile, ion cannons. The warlords deployed the All Terrain Ion Cannon for the mobile defense of strategic locations, though less effectively than the more heavily modified AT-IC.
 TEXT_TOOLTIP_ATAT_IC_WEAP1,1x Super Heavy AV Ion Cannon: 4 / 2.0s / 480m
 TEXT_TOOLTIP_ATKT,
@@ -305,9 +340,9 @@ TEXT_TOOLTIP_STAR_DESTROYER_X,A variant of the venerable Imperial-I Star Destroy
 TEXT_TOOLTIP_TEZRIN,Dongal Tezrin was the captain of the light cruiser Rintonne's Flame. He was assigned to patrol the Elrood sector during the Galactic Civil War. He was known to be a very irritable person.
 TEXT_TOOLTIP_TIE_DEFENDER_RED_STAR,Created a year after the fallout at Endor, Red Star Squadron was formed by starfighter ace Iran Ryad along with like-minded pilots who shared Ryad's idea of a zero-tolerance border policy. These Imperial pilots would relentlessly pursue any starships that entered Imperial space without permission.
 TEXT_TOOLTIP_TIE_FIGHTER_BF2,A rare ad-hoc modification of the ubiquitous TIE Fighter, almost always operating from the equally rare Imperial Carrier Conversion Star Destroyers. It featured shields and a small proton torpedo magazine to keep up with the heavier X-Wings of the Rebellion and be a more versatile platform in carrier-to-carrier combat and anti-insurgency missions. However, despite upgraded components and the engineers' best tuning efforts, the additional systems impacted the flight performance significantly, making the normally nimble craft much more sluggish. The increased cost, reduced agility, and susceptibility to component sabotage made this variant a rare sight outside its original duties.
-TEXT_TOOLTIP_TIE_FIGHTER_MISSILE,A modern iteration of a Clone Wars-era modification of earlier T.I.E. models. Due to its thinner frame, the TIE/ln can only carry a few missiles on external hardpoints, limiting the effectiveness of the upgrade but providing a modest improvement without affecting performance in other categories like a more extensive refit would. Originally rare sight, this configuration has become more common after the Battle of Endor; with Warlords scrambling to get the most out of their aging TIE fleets.
-TEXT_TOOLTIP_TIE_INTERCEPTOR_ION,A somewhat obscure modification of the TIE Interceptor, replacing the nose-mounted secondary lasers with fighter-grade ion cannons and upgrading the frame's power systems to compensate for the increased power draw. The end result is better at tackling shielded fighters and larger targets but otherwise retains the performance of the stock configuration. While undeniably an upgrade over the base model, the increased cost and maintenance load makes it a rare sight.
+TEXT_TOOLTIP_TIE_FIGHTER_MISSILE,A modern iteration of a Clone Wars-era modification of earlier T.I.E. models. Due to its thinner frame, the TIE/ln can only carry a few missiles on external launchers, limiting the effectiveness of the upgrade but providing a modest improvement without affecting performance in other categories like a more extensive refit would. Originally rare sight, this configuration has become more common after the Battle of Endor; with Warlords scrambling to get the most out of their aging TIE fleets.
 TEXT_TOOLTIP_TIE_INTERCEPTOR_ION,
+TEXT_TOOLTIP_TIE_INTERCEPTOR_ION,A somewhat obscure modification of the TIE Interceptor, replacing the nose-mounted secondary lasers with fighter-grade ion cannons and upgrading the frame's power systems to compensate for the increased power draw. The end result is better at tackling shielded fighters and larger targets but otherwise retains the performance of the stock configuration. While undeniably an upgrade over the base model, the increased cost and maintenance load makes it a rare sight.
 TEXT_TOOLTIP_TRAIT_AGENT_TIER_INDUSTRIALIST_TAGGE,Industrialist: TaggeCo (-20% cost, -20% time)
 TEXT_TOOLTIP_UNITS_TIERFON_CAPITAL,Tierfon Capital: Allows unit construction
 TEXT_TOOLTIP_UTAT,Repulsorlift assault vehicle created shortly into the Clone Wars for situations where walker vehicles are less-suited. Unwieldy and fragile compared to other heavy vehicles, but has a powerful set of fore-mounted anti-vehicle weapons. Standard configuration also boasts a respectable transport bay and rear-coverage anti-infantry guns.
@@ -379,6 +414,10 @@ TEXT_UNIT_SHADOW_ULAV,Shadow Ultra-Light Assault Vehicle
 TEXT_UNIT_SHADOW_ULAV_COMPANY,Shadow ULAV Company
 TEXT_UNIT_SHADOW_VENGEANCE_DREADNOUGHT,Shadow Vengeance Star Dreadnought
 TEXT_UNIT_SHADOW_VIGIL,Shadow Vigil Corvette
+TEXT_UNIT_SHIELDED_ARMORED_INTERCEPTOR_ELITE,Elite Heavy TIE Interceptor
+TEXT_UNIT_SHIELDED_ARMORED_INTERCEPTOR_ION,Ion Refit Heavy TIE Interceptor
+TEXT_UNIT_SHIELDED_ARMORED_INTERCEPTOR_MISSILE,Missile Heavy TIE Interceptor
+TEXT_UNIT_SHIELDED_ARMORED_INTERCEPTOR_UPGUNNED,Upgunned Heavy TIE Interceptor
 TEXT_UNIT_SITH_SLAYER,Sith Slayer
 TEXT_UNIT_SITH_STRIDER,Sith Strider
 TEXT_UNIT_SITH_STRIDER_COMPANY,Sith Strider Company
