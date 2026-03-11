@@ -746,6 +746,154 @@
 		</Unit_Abilities_Data>
 	</GroundVehicle>
 
+	<GroundVehicle Name="AT_KT_Walker">
+		<Variant_Of_Existing_Type>AT_ST_Walker</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_AT_KT_WALKER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ATKT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ATKT_HEALTH
+		TEXT_TOOLTIP_ATKT_MOVE
+		TEXT_TOOLTIP_ATKT_WEAP1
+		TEXT_TOOLTIP_ATKT_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_ENHANCED_SENSORS
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_CRUSH
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_ATKT.tga</Icon_Name>
+
+		<Land_Model_Name>EV_AT-KT.alo</Land_Model_Name>
+
+		<Max_Speed>1.05</Max_Speed>
+		<OverrideAcceleration>1.05</OverrideAcceleration>
+		<OverrideDeceleration>1.05</OverrideDeceleration>
+		
+		<Tactical_Health>155</Tactical_Health>
+
+		<Affiliation>Imperial_Proteus</Affiliation>
+
+		<HardPoints>
+			HP_ATST_Lasers,
+			HP_ATKT_Flechette,
+			HP_ATKT_Side
+		</HardPoints>
+
+		<Death_Clone>Damage_Normal, AT_KT_Walker_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Normal, AT_KT_Walker_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Normal, AT_KT_Walker_Death_Clone_02</Death_Clone>
+
+		<Vehicle_Thief_Inside_Clone>AT_KT_Walker_Captured</Vehicle_Thief_Inside_Clone>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+                <Type>STUN</Type>
+                <Recharge_Seconds>90.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> ATKT_Infantry_Stun </GUI_Activated_Ability_Name>
+                <Effective_Radius> 100.0 </Effective_Radius>
+                <Spawned_Object_Type> Stun_Ability_Particles </Spawned_Object_Type>
+				<SFXEvent_Target_Ability> Unit_Attack_AT_ST </SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Stun_Ability Name="ATKT_Infantry_Stun">
+				<Activation_Style> User_Input </Activation_Style>
+				<!-- We need to be within this distance of the clicked target to consider activating Stun -->
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>75.0</Activation_Max_Range>
+				<Stun_Time_In_Secs>5.0</Stun_Time_In_Secs>
+				<Stun_Range>100.0</Stun_Range>
+				<!-- How long does it take for the shockwave to spread from the hero to the max range? -->
+				<Stun_Travel_Time_In_Secs>1.0</Stun_Travel_Time_In_Secs>
+                <Stunned_Effect> Stunned_Particle_Effect </Stunned_Effect> 
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>Infantry, InfantryHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Ability_Stun</SFXEvent_Activate>
+				<Owner_Particle_Effect>Stun_Ability_Particles</Owner_Particle_Effect>
+				<Owner_Particle_Bone_Name />
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>2.0, 2.0, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count />
+			</Stun_Ability>
+		</Abilities>
+	</GroundVehicle>
+
+	<Death_Clone Name="AT_KT_Walker_Death_Clone_00">
+		<Variant_Of_Existing_Type>AT_KT_Walker</Variant_Of_Existing_Type>
+		<CategoryMask>None</CategoryMask>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED,IMPOSING_PRESENCE</LandBehavior>
+		<Custom_Hard_XExtent_Offset> -15.0 </Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent> 15.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 6.0 </Custom_Hard_YExtent>
+		<Death_Persistence_Duration> 30 </Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_AT_ST_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index> 0 </Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle> true </IsDeathCloneObstacle>
+		<Presence_Range>1000.0</Presence_Range>
+	</Death_Clone>
+
+	<Death_Clone Name="AT_KT_Walker_Death_Clone_01">
+		<Variant_Of_Existing_Type>AT_KT_Walker</Variant_Of_Existing_Type>
+		<CategoryMask>None</CategoryMask>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED,IMPOSING_PRESENCE</LandBehavior>
+		<Custom_Hard_YExtent_Offset> -15.0 </Custom_Hard_YExtent_Offset>
+		<Custom_Hard_XExtent> 6.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 15.0 </Custom_Hard_YExtent>
+		<Death_Persistence_Duration> 30 </Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_AT_ST_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index> 1 </Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle> true </IsDeathCloneObstacle>
+		<Presence_Range>1000.0</Presence_Range>
+	</Death_Clone>
+
+	<Death_Clone Name="AT_KT_Walker_Death_Clone_02">
+		<Variant_Of_Existing_Type>AT_KT_Walker</Variant_Of_Existing_Type>
+		<CategoryMask>None</CategoryMask>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED,IMPOSING_PRESENCE</LandBehavior>
+		<Custom_Hard_XExtent> 15.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 6.0 </Custom_Hard_YExtent>
+		<Death_Persistence_Duration> 30 </Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_AT_ST_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index> 2 </Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle> true </IsDeathCloneObstacle>
+		<Presence_Range>1000.0</Presence_Range>
+	</Death_Clone>
+
+	<GroundVehicle Name="AT_KT_Walker_Captured">
+		<Variant_Of_Existing_Type>AT_KT_Walker</Variant_Of_Existing_Type>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+                <Type>STUN</Type>
+                <Recharge_Seconds>90.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> ATKT_Infantry_Stun </GUI_Activated_Ability_Name>
+                <Effective_Radius> 100.0 </Effective_Radius>
+                <Spawned_Object_Type> Stun_Ability_Particles </Spawned_Object_Type>
+				<SFXEvent_Target_Ability> Unit_Attack_AT_ST </SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>
+
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
     <GroundVehicle Name="1L_Tank">
 
 		<Text_ID>TEXT_UNIT_1L_TANK</Text_ID>
